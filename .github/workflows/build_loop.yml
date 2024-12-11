@@ -277,6 +277,12 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+          # LoopWorkspace/LoopConfigOverride.xcconfig: Added BuildFlag for Child insulin model
+          curl https://github.com/gezinvogler/LoopWorkspace/commit/ee6bac5f65f837193285d8491a904fcbb7e6aa9f.patch | git apply -v --directory=LoopWorkspace
+
+          # LoopKit/LoopKit/Extensions/Guardrail+Settings.swift: Increased insulinSensitivity Guardrail max. absoluteBounds
+          curl https://github.com/gezinvogler/LoopKit/commit/cab871cd5f6be733493850396fc07c04af710377.patch | git apply -v --directory=LoopKit
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
