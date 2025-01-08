@@ -278,7 +278,7 @@ jobs:
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
           # LoopKit/LoopKit/Extensions/Guardrail+Settings.swift: Increased insulinSensitivity Guardrail max. absoluteBounds
-          curl https://github.com/gezinvogler/LoopKit/commit/cab871cd5f6be733493850396fc07c04af710377.patch | git apply -v --directory=LoopKit
+          curl https://github.com/gezinvogler/LoopKit/commit/bf7dc9619a57f0926c11472f00ace0c64b19cc2f.patch | git apply -v --directory=LoopKit
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
