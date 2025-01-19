@@ -280,6 +280,9 @@ jobs:
           # LoopKit/LoopKit/Extensions/Guardrail+Settings.swift: Increased insulinSensitivity Guardrail max. absoluteBounds
           curl https://github.com/gezinvogler/LoopKit/commit/bf7dc9619a57f0926c11472f00ace0c64b19cc2f.patch | git apply -v --directory=LoopKit
 
+          # ‎LoopKit/Insulin/ExponentialInsulinModelPreset.swift: Changed actionDuration from 360 to 480 minutes for case rapidActingChild in ExponentialInsulinModelPreset
+          curl https://github.com/gezinvogler/LoopKit/commit/ed584aad0628204607136de628b54ed983fca14c.patch | git apply -v --directory=LoopKit
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
